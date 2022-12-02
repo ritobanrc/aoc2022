@@ -1,5 +1,5 @@
 mod day01;
-//mod day02;
+mod day02;
 //mod day03;
 //mod day04;
 //mod day05;
@@ -82,6 +82,7 @@ macro_rules! aoc {
 pub fn get_day(day: u32) -> Option<(DayFn, DayFn)> {
     return match day {
         1 => aoc!(01, 71780, 212489),
+        2 => aoc!(02, 14069, 12411),
         _ => {
             eprintln!("Unknown day: {}", day);
             return None;
